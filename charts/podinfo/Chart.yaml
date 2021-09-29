@@ -10,4 +10,4 @@ maintainers:
   name: relliott-harness
 sources:
 - https://github.com/relliott-harness/harness-helm-charts
-#kubeVersion: ">=1.19.0-0"
+kubeVersion: ">=1.19.0-0"
