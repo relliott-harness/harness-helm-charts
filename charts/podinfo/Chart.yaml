@@ -7,7 +7,7 @@ description: Podinfo Helm chart for Kubernetes
 home: https://github.com/relliott-harness/harness-helm-charts
 maintainers:
 - email: relliott-harness@users.noreply.github.com
-  name: relliott-harness
+  name: relliott
 sources:
 - https://github.com/relliott-harness/harness-helm-charts
 kubeVersion: ">=1.19.0-0"
