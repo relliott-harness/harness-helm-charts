@@ -1,7 +1,7 @@
 apiVersion: v1
-version: 7.0.3
-appVersion: 7.0.3
+version: 7.0.4
+appVersion: 7.0.4
 name: podinfo
 engine: gotpl
 description: Podinfo Helm chart for Kubernetes
-kubeVersion: ">=1.18.0-0"
+kubeVersion: ">=1.16.0-0"
