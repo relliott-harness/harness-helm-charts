@@ -4,10 +4,10 @@ appVersion: 6.0.0
 name: podinfo
 engine: gotpl
 description: Podinfo Helm chart for Kubernetes
-home: https://github.com/stefanprodan/podinfo
+home: https://github.com/relliott-harness/harness-helm-charts
 maintainers:
-- email: stefanprodan@users.noreply.github.com
-  name: stefanprodan
+- email: relliott-harness@users.noreply.github.com
+  name: relliott-harness
 sources:
-- https://github.com/stefanprodan/podinfo
+- https://github.com/relliott-harness/harness-helm-charts
 #kubeVersion: ">=1.19.0-0"
