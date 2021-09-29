@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   podinfo:
   - apiVersion: v1
+    appVersion: 7.0.4
+    created: "2021-09-29T19:54:39.63604089Z"
+    description: Podinfo Helm chart for Kubernetes
+    digest: 767b96600bfd647d2c1854b86d81c380617852668419d0455d3009a0822d2289
+    kubeVersion: '>=1.16.0-0'
+    name: podinfo
+    urls:
+    - https://github.com/relliott-harness/harness-helm-charts/releases/download/podinfo-7.0.4/podinfo-7.0.4.tgz
+    version: 7.0.4
+  - apiVersion: v1
     appVersion: 7.0.3
     created: "2021-09-29T19:35:29.931289913Z"
     description: Podinfo Helm chart for Kubernetes
@@ -55,4 +65,4 @@ entries:
     urls:
     - https://github.com/relliott-harness/harness-helm-charts/releases/download/podinfo-6.0.0/podinfo-6.0.0.tgz
     version: 6.0.0
-generated: "2021-09-29T19:35:29.931314013Z"
+generated: "2021-09-29T19:54:39.63607409Z"
