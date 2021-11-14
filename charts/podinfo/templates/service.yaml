@@ -5,6 +5,9 @@ metadata:
   name: {{ template "podinfo.fullname" . }}
   labels:
     {{- include "podinfo.labels" . | nindent 4 }}
+    {{- if .Values.harness.labels -}}
+      harness_label: {{ .label }}
+    {{- end }}
 {{- with .Values.service.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}
