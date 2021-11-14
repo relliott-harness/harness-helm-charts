@@ -8,7 +8,7 @@ metadata:
   labels:
     {{- include "podinfo.labels" . | nindent 4 }}
     {{- if .Values.harness.labels -}}
-    {{- include "harness.labels" . | nindent 4 }}
+      harness_label: {{ .label }}
     {{- end }}
   {{- with .Values.ingress.annotations }}
   annotations:
