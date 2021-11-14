@@ -7,9 +7,6 @@ metadata:
   name: {{ $fullName }}
   labels:
     {{- include "podinfo.labels" . | nindent 4 }}
-    {{- if .Values.harness.labels -}}
-      harness_label: {{ .label }}
-    {{- end }}
   {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
