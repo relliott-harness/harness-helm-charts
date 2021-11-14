@@ -5,6 +5,9 @@ metadata:
   name: {{ template "podinfo.fullname" . }}
   labels:
     {{- include "podinfo.labels" . | nindent 4 }}
+    {{- if .Values.harness.labels -}}
+    {{- include "harness.labels" . | nindent 4 }}
+    {{- end }}    
 {{- with .Values.service.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}
@@ -33,7 +36,4 @@ spec:
     {{- end }}
   selector:
     {{- include "podinfo.selectorLabels" . | nindent 4 }}
-    {{- if .Values.harness.labels -}}
-    harness_label: {{ .Values.harness.labels.label }}
-    {{- end }}
 {{- end }}
