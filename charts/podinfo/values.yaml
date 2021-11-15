@@ -7,8 +7,7 @@ backend: #http://backend-podinfo:9898/echo
 backends: []
 
 harness:
-  labels:
-    label: HelloWorld
+  buildNo: ${artifact.buildNo}
     
 image:
   repository: ghcr.io/stefanprodan/podinfo
