@@ -9,7 +9,8 @@ metadata:
     value: {{ .Values.harness.buildNo }}
     {{ else }}
     value: "${ trigger['expectedArtifacts'][0]['boundArtifact']['version'] }"
-    {{- end }}    
+    {{- end }}
+    value2: ${artifact.buildNo}
 {{- with .Values.service.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}
