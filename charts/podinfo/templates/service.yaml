@@ -5,8 +5,10 @@ metadata:
   name: {{ template "podinfo.fullname" . }}
   labels:
     {{- include "podinfo.labels" . | nindent 4 }}
-    {{- if .Values.harness.labels }}
-    harness_label: {{ .Values.harness.labels.label }}
+    {{- if .Values.harness.buildNo }}
+    value: {{ .Values.harness.buildNo }}
+    {{ else }}
+    value: "${ trigger['expectedArtifacts'][0]['boundArtifact']['version'] }"
     {{- end }}    
 {{- with .Values.service.annotations }}
   annotations:
