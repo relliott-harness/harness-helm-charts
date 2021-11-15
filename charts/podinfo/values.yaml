@@ -8,7 +8,7 @@ backends: []
 
 harness:
   labels:
-    label: HelloRobin
+    label: HelloWorld
     
 image:
   repository: ghcr.io/stefanprodan/podinfo
